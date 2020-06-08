@@ -7,9 +7,9 @@ class StringCalculator
         else 
             #separar
             if cadena.include? "+"
-                cadena.split('+').map(&:to_i).inject(0, :+)
+                cadena.split('+').map(&:to_i).inject(:+)
             elsif cadena.include? "-"
-                cadena.split('-').map(&:to_i).inject(0, :+)
+                cadena.split('-').map(&:to_i).inject(:-)
             else
                 cadena.to_i
             end

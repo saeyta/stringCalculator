@@ -62,4 +62,14 @@ describe StringCalculator do
         #assert
         expect(result).to eq 3
     end
+    it "Cuando la cadena es 5, -2,-3 debe retornar 0" do
+        #Arrange
+        calculator = StringCalculator.new
+
+        #act
+        result = calculator.suma("5-2-3");
+
+        #assert
+        expect(result).to eq 0
+    end
 end     
